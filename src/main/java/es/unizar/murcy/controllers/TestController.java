@@ -1,4 +1,4 @@
-package es.unizar.murcy.Controllers;
+package es.unizar.murcy.controllers;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
