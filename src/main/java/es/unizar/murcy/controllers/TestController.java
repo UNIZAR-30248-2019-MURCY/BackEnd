@@ -3,6 +3,7 @@ package es.unizar.murcy.controllers;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -15,6 +16,6 @@ public class TestController {
     public ResponseEntity helloWorld() {
         logger.info("hello world");
 
-        return ResponseEntity.status(HttpStatus.OK).body("Hello world");
+        return ResponseEntity.status(HttpStatus.OK).contentType(MediaType.TEXT_HTML).body("Hello world");
     }
 }
