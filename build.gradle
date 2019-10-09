@@ -23,16 +23,16 @@ apply plugin: 'io.spring.dependency-management'
 
 apply plugin: 'jacoco'
 
-/*jacocoTestCoverageVerification {
+jacocoTestCoverageVerification {
     violationRules {
         rule {
             limit {
-                minimum = 0.4
+                minimum = 0.5
             }
         }
     }
-}*/
-//check.dependsOn jacocoTestCoverageVerification
+}
+check.dependsOn jacocoTestCoverageVerification
 
 group = 'es.unizar.murcy'
 version = '0.0.1-SNAPSHOT'
