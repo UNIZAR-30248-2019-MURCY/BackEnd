@@ -21,6 +21,7 @@ addons:
 script:
 - ./gradlew clean build
 - ./gradlew test jacocoTestReport
+- ./gradlew jacocoTestCoverageVerification #Check if % code is covered by tests
 - sonar-scanner
 
 after_success:
